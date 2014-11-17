@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E49BBC31A0D008600F6CC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBC21A0D008600F6CC7C /* main.m */; };
+		0E49BBC61A0D008600F6CC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBC51A0D008600F6CC7C /* AppDelegate.m */; };
+		0E49BBC91A0D008700F6CC7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBC81A0D008700F6CC7C /* ViewController.m */; };
+		0E49BBCC1A0D008700F6CC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCA1A0D008700F6CC7C /* Main.storyboard */; };
+		0E49BBCE1A0D008700F6CC7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCD1A0D008700F6CC7C /* Images.xcassets */; };
+		0E49BBD11A0D008700F6CC7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCF1A0D008700F6CC7C /* LaunchScreen.xib */; };
+		0E49BBDD1A0D008700F6CC7C /* SimpleGeosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */; };
+		0E49BBE71A0D00BB00F6CC7C /* ifinitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBE61A0D00BB00F6CC7C /* ifinitySDK.framework */; };
+		0E49BBE91A0D00D100F6CC7C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBE81A0D00D100F6CC7C /* MapKit.framework */; };
+		0E49BBEB1A0D00DA00F6CC7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBEA1A0D00DA00F6CC7C /* CoreLocation.framework */; };
+		0E49BBED1A0D00E300F6CC7C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBEC1A0D00E300F6CC7C /* CoreData.framework */; };
+		0E49BBEF1A0D00EB00F6CC7C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBEE1A0D00EB00F6CC7C /* Security.framework */; };
+		0E49BBF11A0D00F100F6CC7C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBF01A0D00F100F6CC7C /* CoreBluetooth.framework */; };
+		0E49BBF51A0D014C00F6CC7C /* ifinityDB.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBF41A0D014C00F6CC7C /* ifinityDB.bundle */; };
+		0E49BBF71A0D067D00F6CC7C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBF61A0D067D00F6CC7C /* libz.dylib */; };
+		0E49BBFE1A1A146E00F6CC7C /* IndoorMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBFD1A1A146E00F6CC7C /* IndoorMapController.m */; };
+		0E49BC011A1A14AC00F6CC7C /* UserAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BC001A1A14AC00F6CC7C /* UserAnnotation.m */; };
+		0E49BC041A1A14ED00F6CC7C /* TargetAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BC031A1A14ED00F6CC7C /* TargetAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E49BBD71A0D008700F6CC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E49BBB51A0D008600F6CC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E49BBBC1A0D008600F6CC7C;
+			remoteInfo = SimpleGeos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGeos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49BBC11A0D008600F6CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E49BBC21A0D008600F6CC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E49BBC41A0D008600F6CC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E49BBC51A0D008600F6CC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E49BBC71A0D008700F6CC7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E49BBC81A0D008700F6CC7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0E49BBCB1A0D008700F6CC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E49BBCD1A0D008700F6CC7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E49BBD01A0D008700F6CC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGeosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49BBDB1A0D008700F6CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGeosTests.m; sourceTree = "<group>"; };
+		0E49BBE61A0D00BB00F6CC7C /* ifinitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ifinitySDK.framework; path = SimpleGeos/ifinitySDK.framework; sourceTree = "<group>"; };
+		0E49BBE81A0D00D100F6CC7C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0E49BBEA1A0D00DA00F6CC7C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E49BBEC1A0D00E300F6CC7C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0E49BBEE1A0D00EB00F6CC7C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0E49BBF01A0D00F100F6CC7C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0E49BBF41A0D014C00F6CC7C /* ifinityDB.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ifinityDB.bundle; path = SimpleGeos/ifinitySDK.framework/Versions/A/Resources/ifinityDB.bundle; sourceTree = "<group>"; };
+		0E49BBF61A0D067D00F6CC7C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0E49BBFC1A1A146E00F6CC7C /* IndoorMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndoorMapController.h; sourceTree = "<group>"; };
+		0E49BBFD1A1A146E00F6CC7C /* IndoorMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndoorMapController.m; sourceTree = "<group>"; };
+		0E49BBFF1A1A14AC00F6CC7C /* UserAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnnotation.h; sourceTree = "<group>"; };
+		0E49BC001A1A14AC00F6CC7C /* UserAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnnotation.m; sourceTree = "<group>"; };
+		0E49BC021A1A14ED00F6CC7C /* TargetAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetAnnotation.h; sourceTree = "<group>"; };
+		0E49BC031A1A14ED00F6CC7C /* TargetAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E49BBBA1A0D008600F6CC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E49BBF71A0D067D00F6CC7C /* libz.dylib in Frameworks */,
+				0E49BBF11A0D00F100F6CC7C /* CoreBluetooth.framework in Frameworks */,
+				0E49BBEF1A0D00EB00F6CC7C /* Security.framework in Frameworks */,
+				0E49BBED1A0D00E300F6CC7C /* CoreData.framework in Frameworks */,
+				0E49BBEB1A0D00DA00F6CC7C /* CoreLocation.framework in Frameworks */,
+				0E49BBE91A0D00D100F6CC7C /* MapKit.framework in Frameworks */,
+				0E49BBE71A0D00BB00F6CC7C /* ifinitySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49BBD31A0D008700F6CC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E49BBB41A0D008600F6CC7C = {
+			isa = PBXGroup;
+			children = (
+				0E49BBBF1A0D008600F6CC7C /* SimpleGeos */,
+				0E49BBD91A0D008700F6CC7C /* SimpleGeosTests */,
+				0E49BBBE1A0D008600F6CC7C /* Products */,
+				0E49BBF21A0D010600F6CC7C /* Frameworks */,
+				0E49BBF31A0D012A00F6CC7C /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		0E49BBBE1A0D008600F6CC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */,
+				0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E49BBBF1A0D008600F6CC7C /* SimpleGeos */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BC051A1A176800F6CC7C /* Indoor */,
+				0E49BBC41A0D008600F6CC7C /* AppDelegate.h */,
+				0E49BBC51A0D008600F6CC7C /* AppDelegate.m */,
+				0E49BBC71A0D008700F6CC7C /* ViewController.h */,
+				0E49BBC81A0D008700F6CC7C /* ViewController.m */,
+				0E49BBCA1A0D008700F6CC7C /* Main.storyboard */,
+				0E49BBCD1A0D008700F6CC7C /* Images.xcassets */,
+				0E49BBCF1A0D008700F6CC7C /* LaunchScreen.xib */,
+				0E49BBC01A0D008600F6CC7C /* Supporting Files */,
+			);
+			path = SimpleGeos;
+			sourceTree = "<group>";
+		};
+		0E49BBC01A0D008600F6CC7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBC11A0D008600F6CC7C /* Info.plist */,
+				0E49BBC21A0D008600F6CC7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E49BBD91A0D008700F6CC7C /* SimpleGeosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */,
+				0E49BBDA1A0D008700F6CC7C /* Supporting Files */,
+			);
+			path = SimpleGeosTests;
+			sourceTree = "<group>";
+		};
+		0E49BBDA1A0D008700F6CC7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBDB1A0D008700F6CC7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E49BBF21A0D010600F6CC7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBF61A0D067D00F6CC7C /* libz.dylib */,
+				0E49BBE61A0D00BB00F6CC7C /* ifinitySDK.framework */,
+				0E49BBF01A0D00F100F6CC7C /* CoreBluetooth.framework */,
+				0E49BBEE1A0D00EB00F6CC7C /* Security.framework */,
+				0E49BBEC1A0D00E300F6CC7C /* CoreData.framework */,
+				0E49BBEA1A0D00DA00F6CC7C /* CoreLocation.framework */,
+				0E49BBE81A0D00D100F6CC7C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E49BBF31A0D012A00F6CC7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BBF41A0D014C00F6CC7C /* ifinityDB.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0E49BC051A1A176800F6CC7C /* Indoor */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BC021A1A14ED00F6CC7C /* TargetAnnotation.h */,
+				0E49BC031A1A14ED00F6CC7C /* TargetAnnotation.m */,
+				0E49BBFF1A1A14AC00F6CC7C /* UserAnnotation.h */,
+				0E49BC001A1A14AC00F6CC7C /* UserAnnotation.m */,
+				0E49BBFC1A1A146E00F6CC7C /* IndoorMapController.h */,
+				0E49BBFD1A1A146E00F6CC7C /* IndoorMapController.m */,
+			);
+			name = Indoor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E49BBBC1A0D008600F6CC7C /* SimpleGeos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeos" */;
+			buildPhases = (
+				0E49BBB91A0D008600F6CC7C /* Sources */,
+				0E49BBBA1A0D008600F6CC7C /* Frameworks */,
+				0E49BBBB1A0D008600F6CC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleGeos;
+			productName = SimpleGeos;
+			productReference = 0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E49BBD51A0D008700F6CC7C /* SimpleGeosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeosTests" */;
+			buildPhases = (
+				0E49BBD21A0D008700F6CC7C /* Sources */,
+				0E49BBD31A0D008700F6CC7C /* Frameworks */,
+				0E49BBD41A0D008700F6CC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E49BBD81A0D008700F6CC7C /* PBXTargetDependency */,
+			);
+			name = SimpleGeosTests;
+			productName = SimpleGeosTests;
+			productReference = 0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E49BBB51A0D008600F6CC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = GetIfinity;
+				TargetAttributes = {
+					0E49BBBC1A0D008600F6CC7C = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 427QP2Q66Q;
+					};
+					0E49BBD51A0D008700F6CC7C = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0E49BBBC1A0D008600F6CC7C;
+					};
+				};
+			};
+			buildConfigurationList = 0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "SimpleGeos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E49BBB41A0D008600F6CC7C;
+			productRefGroup = 0E49BBBE1A0D008600F6CC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E49BBBC1A0D008600F6CC7C /* SimpleGeos */,
+				0E49BBD51A0D008700F6CC7C /* SimpleGeosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E49BBBB1A0D008600F6CC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E49BBCC1A0D008700F6CC7C /* Main.storyboard in Resources */,
+				0E49BBD11A0D008700F6CC7C /* LaunchScreen.xib in Resources */,
+				0E49BBF51A0D014C00F6CC7C /* ifinityDB.bundle in Resources */,
+				0E49BBCE1A0D008700F6CC7C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49BBD41A0D008700F6CC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E49BBB91A0D008600F6CC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E49BC011A1A14AC00F6CC7C /* UserAnnotation.m in Sources */,
+				0E49BBC91A0D008700F6CC7C /* ViewController.m in Sources */,
+				0E49BBFE1A1A146E00F6CC7C /* IndoorMapController.m in Sources */,
+				0E49BBC61A0D008600F6CC7C /* AppDelegate.m in Sources */,
+				0E49BBC31A0D008600F6CC7C /* main.m in Sources */,
+				0E49BC041A1A14ED00F6CC7C /* TargetAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49BBD21A0D008700F6CC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E49BBDD1A0D008700F6CC7C /* SimpleGeosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E49BBD81A0D008700F6CC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E49BBBC1A0D008600F6CC7C /* SimpleGeos */;
+			targetProxy = 0E49BBD71A0D008700F6CC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E49BBCA1A0D008700F6CC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E49BBCB1A0D008700F6CC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E49BBCF1A0D008700F6CC7C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E49BBD01A0D008700F6CC7C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E49BBDE1A0D008700F6CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E49BBDF1A0D008700F6CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E49BBE11A0D008700F6CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleGeos",
+				);
+				INFOPLIST_FILE = SimpleGeos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E49BBE21A0D008700F6CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleGeos",
+				);
+				INFOPLIST_FILE = SimpleGeos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0E49BBE41A0D008700F6CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleGeosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGeos.app/SimpleGeos";
+			};
+			name = Debug;
+		};
+		0E49BBE51A0D008700F6CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleGeosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGeos.app/SimpleGeos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "SimpleGeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E49BBDE1A0D008700F6CC7C /* Debug */,
+				0E49BBDF1A0D008700F6CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E49BBE11A0D008700F6CC7C /* Debug */,
+				0E49BBE21A0D008700F6CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E49BBE41A0D008700F6CC7C /* Debug */,
+				0E49BBE51A0D008700F6CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E49BBB51A0D008600F6CC7C /* Project object */;
+}
