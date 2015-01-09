@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import <ifinitySDK/ifinitySDK.h>
 
+/**
+ *  Fill with Application id and application secret from your geos.zone account. 
+ *
+ */
 #define GEOS_APP_ID @"..."
 #define GEOS_SECRET @"..."
 

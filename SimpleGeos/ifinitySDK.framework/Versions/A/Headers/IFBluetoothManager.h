@@ -150,7 +150,7 @@
 - (void)resetTransmitters;
 
 /**
- *  Tourns our device into a beacon
+ *  Tourns our device into a beacon with name "virtualbeacon" proximity uuid="2FF70926-AAD1-4710-BCEA-2E48CA4A4655" major="01" minor="02"
  */
 - (void)startVirtualBeacon;
 

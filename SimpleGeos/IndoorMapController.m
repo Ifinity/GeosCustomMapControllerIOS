@@ -9,8 +9,6 @@
 #import "IndoorMapController.h"
 #import "UserAnnotation.h"
 #import "TargetAnnotation.h"
-#import <ifinitySDK/IFRouteDataProvider.h>
-#import <ifinitySDK/IFAreaDataProvider.h>
 #import <ifinitySDK/IFMArea+helper.h>
 
 #define distanceFake .5
@@ -378,21 +376,22 @@
 	[self.mapView addAnnotation:_targetAnnotation];
 	[[self.mapView viewForAnnotation:_userAnnotation] setAlpha:0.1f];
 
-	[[[IFDataManager sharedManager] routeDataProvider] queryRouteFromFloor:_currentFloorplan
-	                                                        fromCoordinate:userPosition
-	                                                               toFloor:area.floorplan
-	                                                          toCoordinate:coordinate
-	                                                         transportType:type
-	                                                               success: ^(NSDictionary *routes, CLLocationCoordinate2D endPoint) {
-	    [context setEndPoint:[[IFLocationManager sharedManager] translateCoordinate:endPoint]];
-	    [routes enumerateKeysAndObjectsUsingBlock: ^(NSNumber *key, IFPolyline *obj, BOOL *stop) {
-	            if ([key integerValue] == [self.currentFloorplan.remote_id integerValue]) {
-	                [self.mapView addOverlay:obj level:MKOverlayLevelAboveLabels];
-	                [context setRoute:obj];
-				}
-			}];
-	    [self recalculatePositionWithContext:context];
-	} failure:nil];
+    [[IFDataManager sharedManager] routeFromFloorId:_currentFloorplan.remote_id
+                                     fromCoordinate:userPosition
+                                          toFloorId:area.floorplan.remote_id
+                                       toCoordinate:coordinate
+                                      transportType:type
+                                            success:^(NSDictionary *routes, CLLocationCoordinate2D endPoint) {
+        [context setEndPoint:[[IFLocationManager sharedManager] translateCoordinate:endPoint]];
+        [routes enumerateKeysAndObjectsUsingBlock: ^(NSNumber *key, IFPolyline *obj, BOOL *stop) {
+            if ([key integerValue] == [self.currentFloorplan.remote_id integerValue]) {
+                [self.mapView addOverlay:obj level:MKOverlayLevelAboveLabels];
+                [context setRoute:obj];
+            }
+        }];
+        [self recalculatePositionWithContext:context];
+    } failure:nil];
+    
 	return context;
 }
 
@@ -440,23 +439,6 @@
     }
 }
 
-#pragma mark - IFDataManagerDelegate
-
-- (void)dataProvider:(IFAreaDataProvider *)provider didUpdateAreas:(NSArray *)areas
-{
-	NSLog(@"%li  areas loaded ", (unsigned long)[areas count]);
-}
-
-- (void)dataProvider:(IFBeaconDataProvider *)provider didUpdateBeacons:(NSArray *)beacons
-{
-	NSLog(@"%li  beacons loaded ", (unsigned long)[beacons count]);
-}
-
-- (void)dataProvider:(IFFloorplanDataProvider *)provider didUpdateFloorplans:(NSArray *)floorplans
-{
-	NSLog(@"%li  floorplans loaded ", (unsigned long)[floorplans count]);
-}
-
 @end
 
 
@@ -485,7 +467,7 @@
 
 - (void)setUserPosition:(CLLocationCoordinate2D)coordinate
 {
-	IFRouteDetails *details = [[[IFDataManager sharedManager] routeDataProvider] getCoordinateClosestTo:coordinate onPolyline:_route];
+	IFRouteDetails *details = [[IFLocationManager sharedManager] coordinateClosestTo:coordinate onPolyline:_route];
 	_nextNodeDetails = details;
 }
 

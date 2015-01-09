@@ -15,22 +15,30 @@
  *  Every beacon object it's a type of IFTransmitter, we can get it's identifier, RSSI, distance, radius, coordinate, etc.
  */
 @interface IFTransmitter : NSObject
-@property (nonatomic, strong) NSNumber *RSSI;
-@property (nonatomic, readonly) NSNumber *filteredRSSI;
 @property (nonatomic, readonly) CBPeripheral *peripheral;
-@property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic) BOOL active;
-@property (nonatomic, retain) IFMBeacon *beacon;
 
 /**
- *  @return Transmitter (beacon) name
+ *  Last RSSI value
  */
-- (NSString *)name;
+@property (nonatomic, strong) NSNumber *RSSI;
 /**
- *  [[CBPeripheral identifier] UUIDString]
- *  @return peripheral identifier as string
+ *  RSSI value filtered with our algorithms. This value is more 'stable' and less sensitive to signal strength fluctuations.
  */
-- (NSString *)UUID;
+@property (nonatomic, readonly) NSNumber *filteredRSSI;
+
+
+/**
+ *  Transmitter (beacon) name
+ */
+@property (nonatomic, strong, readonly) NSString *name;
+
+/**
+ * Peripheral identifier as string.
+ * This value is created from calling [[CBPeripheral identifier] UUIDString]
+ */
+@property (nonatomic, strong, readonly) NSString *UUID;
+
 /**
  *  Transmitter distance in meters based on current RSSI
  *
@@ -40,7 +48,7 @@
 /**
  * Transmitter distance in meters based on current RSSI with the use of filtering algorithms.
  *
- *  @return <#return value description#>
+ *  @return distance in meters using filtering algorithms
  */
 - (float)filteredDistance;
 /**
@@ -55,4 +63,14 @@
  *  @return YES when disappeared
  */
 - (BOOL)hasDisappeared;
+
+#pragma mark - Geos stuff
+/**
+ *  Get assigned model object describing beacon in geos system.
+ */
+@property (nonatomic, retain) IFMBeacon *beacon;
+/**
+ *  Transmitter geo coordinates assigned in geos system.
+ */
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 @end

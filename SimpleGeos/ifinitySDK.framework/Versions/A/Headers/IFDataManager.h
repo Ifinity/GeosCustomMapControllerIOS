@@ -8,22 +8,25 @@
 
 #import "IFDataManagerTypes.h"
 #import "IFOAuth2Client.h"
-#import "IFAreaDataProvider.h"
-#import "IFBeaconDataProvider.h"
-#import "IFFloorplanDataProvider.h"
-#import "IFRouteDataProvider.h"
+#import <CoreLocation/CoreLocation.h>
 
-@class IFAreaDataProvider;
-@class IFBeaconDataProvider;
-@class IFFloorplanDataProvider;
-@class IFRouteDataProvider;
-@protocol IFAreaProviderDelegate;
-@protocol IFBeaconProviderDelegate;
-@protocol IFFloorplanDataProviderDelegate;
+/**
+ *  Notification send when new data are inserted/updated in cache database.
+ */
+extern NSString * const IFDataManagerNotificationPlacesUpdate;
+extern NSString * const IFDataManagerNotificationCacheClear;
+
 
 @class IFDataManager;
 
-
+/**
+ *  There could be different type of routes: Shortest, Stairs only, Elevator only
+ */
+typedef NS_ENUM(NSInteger, IFRouteType) {
+    IFRouteTypeDefault = 0,
+    IFRouteTypeStairs  = 1,
+    IFRouteTypeElevator = 2
+};
 
 /**
  *  Delegate for `IFDataManager` class.
@@ -31,7 +34,7 @@
  *  ## Misc
  *  `IFDataManagerDelegate` extends Data Providers Delegates (*ProviderDelegate). This way allow to debug fetching data from api.
  */
-@protocol IFDataManagerDelegate <NSObject, IFAreaProviderDelegate, IFBeaconProviderDelegate, IFFloorplanDataProviderDelegate>
+@protocol IFDataManagerDelegate <NSObject>
 @optional
 
 /**
@@ -108,7 +111,7 @@ Most of data received from API is converted to coredata model object and stored 
             secret:(NSString *)clientSecret;
 
 /**
- *  Authenticate user and obtain api access token
+ *  Authenticate user and obtain API access token
  *  Use with blocks or delegates
  */
 - (void)authenticateWithSuccess:(void (^)(IFOAuthCredential *credential))success failure:(void (^)(NSError *error))failure;
@@ -118,41 +121,31 @@ Most of data received from API is converted to coredata model object and stored 
  */
 - (void)unauthenticate;
 
-/**
- *  OAuth token refreshal - all authomaticly. Internal method, no need to fire it from the custom applications.
- *
- *  @param success Callback methods
- *  @param failure Callback methods
- */
-- (void)forceRefreshAccessTokenWithSuccess:(IFManagerClientSuccess)success
-                                   failure:(IFManagerClientFailure)failure;
-
-
-#pragma mark - Data providers
-
-/**
- *  Data manager is used to create IFAreaDataProvider using Factory Design Pattern
- */
-- (IFAreaDataProvider *)areaDataProvider;
-
-/**
- *  Data manager is used to create IFBeaconDataProvider using Factory Design Pattern
- */
-- (IFBeaconDataProvider *)beaconDataProvider;
-
-/**
- *  Data manager is used to create IFFloorplanDataProvider using Factory Design Pattern
- */
-- (IFFloorplanDataProvider *)floorplanDataProvider;
-
-/**
- *  Data manager is used to create IFRouteDataProvider using Factory Design Pattern
- */
-- (IFRouteDataProvider *)routeDataProvider;
 
 /**
  *  Clear local cache
  */
 - (void)clearCaches;
 
+
+- (void)loadDataForLocation:(CLLocation *)location block:(void (^)(BOOL success))block;
+
+/**
+ *  Query backend for route calculation between two points
+ *
+ *  @param fromFloorId    start floor id
+ *  @param fromCoordinate start coordinate
+ *  @param toFloorId      destination floor id
+ *  @param toCoordinate   destination coordinates
+ *  @param type           route type
+ *  @param success        success block, array routes filled with IFPolygon objects
+ *  @param failure        failure block
+ */
+- (void)routeFromFloorId:(NSNumber *)fromFloorId
+          fromCoordinate:(CLLocationCoordinate2D)fromCoordinate
+               toFloorId:(NSNumber *)toFloorId
+            toCoordinate:(CLLocationCoordinate2D)toCoordinate
+           transportType:(IFRouteType)type
+                 success:(void (^)(NSDictionary *routes, CLLocationCoordinate2D endPoint))success
+                 failure:(void (^)(NSError *error))failure;
 @end

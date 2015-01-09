@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MKMapView.h>
+#import "IFRouteDetails.h"
+#import "IFPolyline.h"
 
 @class IFLocationManager;
 
@@ -92,8 +94,18 @@
 /**
  *  We need to monitor current user position in order to get nearby buildings and beacons. The position should be passed using updateCurrentLocation: method
  *
+ *  Caudution: Do not call this method to fast with almost this same values. This could cause strange problems with duplicated data in cache.
  *  @param location current user location
  */
 - (void)updateCurrentLocation:(CLLocation *)location;
 
+/**
+ *  Gets the information about the next node, current angle, and target distance, based on the pXy coordinate
+ *
+ *  @param pXy      Coordinate to snap
+ *  @param polyline Polyline we want to snap to
+ *
+ *  @return Route details
+ */
+- (IFRouteDetails *) coordinateClosestTo:(CLLocationCoordinate2D)point onPolyline:(IFPolyline *)polyline;
 @end
