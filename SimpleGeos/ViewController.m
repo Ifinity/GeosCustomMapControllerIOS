@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     
+    self.indoorMapController.shouldAddBeaconsToMap = YES;
     [self.indoorMapController setupWithMapView:self.mapView viewController:self floorplan:nil];
 }
 
