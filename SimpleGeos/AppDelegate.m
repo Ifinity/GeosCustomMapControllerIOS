@@ -13,8 +13,8 @@
  *  Fill with Application id and application secret from your geos.zone account. 
  *
  */
-#define GEOS_APP_ID @"43_8jqmibuoltkwkkogsws4ogkkwg4swos0g8ko84k44s4o848o8"
-#define GEOS_SECRET @"2b1my6quzs748440gcwcww04os0kw0s480o4cskg488488gc8w"
+#define GEOS_APP_ID @"..."
+#define GEOS_SECRET @"..."
 
 @interface AppDelegate ()
 
