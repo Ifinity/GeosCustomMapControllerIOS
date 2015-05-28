@@ -31,7 +31,9 @@
         // This line should be triggered automaticly, based on my GPS coordinates,
         // At this stage, we don't want to complicate this, you can add GPS support at any time
         // IMPORTANT! Place your coordinates here
-        [[IFDataManager sharedManager] loadDataForLocation:[[CLLocation alloc] initWithLatitude:52 longitude:21] withPublicVenues:NO block:^(BOOL success) {
+        [[IFDataManager sharedManager] loadDataForLocation:[[CLLocation alloc] initWithLatitude:52 longitude:21] withPublicVenues:NO successBlock:^(NSArray *venues) {
+            
+        } failure:^(NSError *error) {
             
         }];
         
