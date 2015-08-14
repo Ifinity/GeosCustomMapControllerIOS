@@ -218,7 +218,6 @@
 				TargetAttributes = {
 					0E49BBBC1A0D008600F6CC7C = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 427QP2Q66Q;
 					};
 					0E49BBD51A0D008700F6CC7C = {
 						CreatedOnToolsVersion = 6.1;
@@ -442,7 +441,7 @@
 					"$(PROJECT_DIR)/SimpleGeos",
 				);
 				INFOPLIST_FILE = SimpleGeos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -459,7 +458,7 @@
 					"$(PROJECT_DIR)/SimpleGeos",
 				);
 				INFOPLIST_FILE = SimpleGeos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

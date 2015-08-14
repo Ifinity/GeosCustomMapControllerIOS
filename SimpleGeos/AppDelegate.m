@@ -31,14 +31,15 @@
         // This line should be triggered automaticly, based on my GPS coordinates,
         // At this stage, we don't want to complicate this, you can add GPS support at any time
         // IMPORTANT! Place your coordinates here
-        [[IFDataManager sharedManager] loadDataForLocation:[[CLLocation alloc] initWithLatitude:52 longitude:21] withPublicVenues:NO successBlock:^(NSArray *venues) {
-            
+        [[IFDataManager sharedManager] loadDataForLocation:[[CLLocation alloc] initWithLatitude:52 longitude:21] distance:@1000 withPublicVenues:YES successBlock:^(NSArray *venues) {
+            NSLog(@"-loadDataForLocation success.");
         } failure:^(NSError *error) {
-            
+            NSLog(@"-loadDataForLocation error %@",error);
         }];
         
     } failure:^(NSError *error) {
         NSLog(@"Invalid authentication with error %@", error);
+        NSLog(@"Fill with Application id and application secret from your geos.zone account.");
     }];
     
     return YES;

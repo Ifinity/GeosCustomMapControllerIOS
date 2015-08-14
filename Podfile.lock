@@ -1,10 +1,10 @@
 PODS:
-  - IfinitySDK (0.1.6.1)
+  - IfinitySDK (0.1.6.5)
 
 DEPENDENCIES:
   - IfinitySDK
 
 SPEC CHECKSUMS:
-  IfinitySDK: f641d60c321b2f54d633bbb5b2282ae819d2ce93
+  IfinitySDK: 187079bfb4e0746e67bd8d4a9f0063c02baf6435
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.36.3
