@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -11,8 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-a6-iSt">
-                    <rect key="frame" x="95" y="95" width="290" height="290"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_main" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-a6-iSt">
+                    <rect key="frame" x="171" y="221" width="138" height="39"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="375" id="1IU-j7-stk"/>
                         <constraint firstAttribute="width" constant="290" id="beq-RE-6Fr"/>
@@ -21,6 +21,8 @@
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="1IU-j7-stk"/>
+                            <exclude reference="beq-RE-6Fr"/>
+                            <exclude reference="urX-I2-HJG"/>
                         </mask>
                     </variation>
                 </imageView>
@@ -31,7 +33,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.25490196078431371" green="0.55294117647058827" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pYl-j0-E0n" secondAttribute="bottom" constant="30" id="OBA-7f-kkr"/>
                 <constraint firstAttribute="centerX" secondItem="pYl-j0-E0n" secondAttribute="centerX" id="bJ8-vQ-hyl"/>
@@ -44,6 +46,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="290" height="290"/>
+        <image name="logo_main" width="138" height="39"/>
     </resources>
 </document>
