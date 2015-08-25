@@ -11,8 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_main" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-a6-iSt">
-                    <rect key="frame" x="171" y="221" width="138" height="39"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_main" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-a6-iSt">
+                    <rect key="frame" x="170" y="231" width="140" height="19"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="375" id="1IU-j7-stk"/>
                         <constraint firstAttribute="width" constant="290" id="beq-RE-6Fr"/>
@@ -29,11 +29,11 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Geos Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-j0-E0n">
                     <rect key="frame" x="152" y="429" width="177" height="21"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.25490196078431371" green="0.55294117647058827" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pYl-j0-E0n" secondAttribute="bottom" constant="30" id="OBA-7f-kkr"/>
                 <constraint firstAttribute="centerX" secondItem="pYl-j0-E0n" secondAttribute="centerX" id="bJ8-vQ-hyl"/>
@@ -46,6 +46,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo_main" width="138" height="39"/>
+        <image name="logo_main" width="140" height="19"/>
     </resources>
 </document>
