@@ -14,7 +14,6 @@
 		0E49BBCC1A0D008700F6CC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCA1A0D008700F6CC7C /* Main.storyboard */; };
 		0E49BBCE1A0D008700F6CC7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCD1A0D008700F6CC7C /* Images.xcassets */; };
 		0E49BBD11A0D008700F6CC7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E49BBCF1A0D008700F6CC7C /* LaunchScreen.xib */; };
-		0E49BBDD1A0D008700F6CC7C /* SimpleGeosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */; };
 		0E49BBE91A0D00D100F6CC7C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBE81A0D00D100F6CC7C /* MapKit.framework */; };
 		0E49BBEB1A0D00DA00F6CC7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBEA1A0D00DA00F6CC7C /* CoreLocation.framework */; };
 		0E49BBED1A0D00E300F6CC7C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E49BBEC1A0D00E300F6CC7C /* CoreData.framework */; };
@@ -29,12 +28,12 @@
 			containerPortal = 0E49BBB51A0D008600F6CC7C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0E49BBBC1A0D008600F6CC7C;
-			remoteInfo = SimpleGeos;
+			remoteInfo = GeosSimpleAppIOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGeos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49BBBD1A0D008600F6CC7C /* GeosSimpleAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeosSimpleAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E49BBC11A0D008600F6CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E49BBC21A0D008600F6CC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E49BBC41A0D008600F6CC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,9 +43,8 @@
 		0E49BBCB1A0D008700F6CC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E49BBCD1A0D008700F6CC7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0E49BBD01A0D008700F6CC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGeosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49BBD61A0D008700F6CC7C /* GeosSimpleAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeosSimpleAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E49BBDB1A0D008700F6CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGeosTests.m; sourceTree = "<group>"; };
 		0E49BBE81A0D00D100F6CC7C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0E49BBEA1A0D00DA00F6CC7C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E49BBEC1A0D00E300F6CC7C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -86,8 +84,8 @@
 		0E49BBB41A0D008600F6CC7C = {
 			isa = PBXGroup;
 			children = (
-				0E49BBBF1A0D008600F6CC7C /* SimpleGeos */,
-				0E49BBD91A0D008700F6CC7C /* SimpleGeosTests */,
+				0E49BBBF1A0D008600F6CC7C /* GeosSimpleAppIOS */,
+				0E49BBD91A0D008700F6CC7C /* GeosSimpleAppIOSTests */,
 				0E49BBBE1A0D008600F6CC7C /* Products */,
 				0E49BBF21A0D010600F6CC7C /* Frameworks */,
 				F1418E2D5EA6E320FD45FCCD /* Pods */,
@@ -97,13 +95,13 @@
 		0E49BBBE1A0D008600F6CC7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */,
-				0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */,
+				0E49BBBD1A0D008600F6CC7C /* GeosSimpleAppIOS.app */,
+				0E49BBD61A0D008700F6CC7C /* GeosSimpleAppIOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E49BBBF1A0D008600F6CC7C /* SimpleGeos */ = {
+		0E49BBBF1A0D008600F6CC7C /* GeosSimpleAppIOS */ = {
 			isa = PBXGroup;
 			children = (
 				0E49BBC41A0D008600F6CC7C /* AppDelegate.h */,
@@ -115,7 +113,7 @@
 				0E49BBCF1A0D008700F6CC7C /* LaunchScreen.xib */,
 				0E49BBC01A0D008600F6CC7C /* Supporting Files */,
 			);
-			path = SimpleGeos;
+			path = GeosSimpleAppIOS;
 			sourceTree = "<group>";
 		};
 		0E49BBC01A0D008600F6CC7C /* Supporting Files */ = {
@@ -127,13 +125,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0E49BBD91A0D008700F6CC7C /* SimpleGeosTests */ = {
+		0E49BBD91A0D008700F6CC7C /* GeosSimpleAppIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E49BBDC1A0D008700F6CC7C /* SimpleGeosTests.m */,
 				0E49BBDA1A0D008700F6CC7C /* Supporting Files */,
 			);
-			path = SimpleGeosTests;
+			path = GeosSimpleAppIOSTests;
 			sourceTree = "<group>";
 		};
 		0E49BBDA1A0D008700F6CC7C /* Supporting Files */ = {
@@ -170,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E49BBBC1A0D008600F6CC7C /* SimpleGeos */ = {
+		0E49BBBC1A0D008600F6CC7C /* GeosSimpleAppIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeos" */;
+			buildConfigurationList = 0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "GeosSimpleAppIOS" */;
 			buildPhases = (
 				A277901F7ABD85E9C4AD58A1 /* Check Pods Manifest.lock */,
 				0E49BBB91A0D008600F6CC7C /* Sources */,
@@ -184,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = SimpleGeos;
-			productName = SimpleGeos;
-			productReference = 0E49BBBD1A0D008600F6CC7C /* SimpleGeos.app */;
+			name = GeosSimpleAppIOS;
+			productName = GeosSimpleAppIOS;
+			productReference = 0E49BBBD1A0D008600F6CC7C /* GeosSimpleAppIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0E49BBD51A0D008700F6CC7C /* SimpleGeosTests */ = {
+		0E49BBD51A0D008700F6CC7C /* GeosSimpleAppIOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeosTests" */;
+			buildConfigurationList = 0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "GeosSimpleAppIOSTests" */;
 			buildPhases = (
 				0E49BBD21A0D008700F6CC7C /* Sources */,
 				0E49BBD31A0D008700F6CC7C /* Frameworks */,
@@ -202,9 +199,9 @@
 			dependencies = (
 				0E49BBD81A0D008700F6CC7C /* PBXTargetDependency */,
 			);
-			name = SimpleGeosTests;
-			productName = SimpleGeosTests;
-			productReference = 0E49BBD61A0D008700F6CC7C /* SimpleGeosTests.xctest */;
+			name = GeosSimpleAppIOSTests;
+			productName = GeosSimpleAppIOSTests;
+			productReference = 0E49BBD61A0D008700F6CC7C /* GeosSimpleAppIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "SimpleGeos" */;
+			buildConfigurationList = 0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "GeosSimpleAppIOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E49BBBC1A0D008600F6CC7C /* SimpleGeos */,
-				0E49BBD51A0D008700F6CC7C /* SimpleGeosTests */,
+				0E49BBBC1A0D008600F6CC7C /* GeosSimpleAppIOS */,
+				0E49BBD51A0D008700F6CC7C /* GeosSimpleAppIOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E49BBDD1A0D008700F6CC7C /* SimpleGeosTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		0E49BBD81A0D008700F6CC7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E49BBBC1A0D008600F6CC7C /* SimpleGeos */;
+			target = 0E49BBBC1A0D008600F6CC7C /* GeosSimpleAppIOS */;
 			targetProxy = 0E49BBD71A0D008700F6CC7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,12 +434,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SimpleGeos",
+					"$(PROJECT_DIR)/GeosSimpleAppIOS",
 				);
-				INFOPLIST_FILE = SimpleGeos/Info.plist;
+				INFOPLIST_FILE = GeosSimpleAppIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GeosSimpleAppIOS;
 			};
 			name = Debug;
 		};
@@ -455,12 +451,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SimpleGeos",
+					"$(PROJECT_DIR)/GeosSimpleAppIOS",
 				);
-				INFOPLIST_FILE = SimpleGeos/Info.plist;
+				INFOPLIST_FILE = GeosSimpleAppIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GeosSimpleAppIOS;
 			};
 			name = Release;
 		};
@@ -476,10 +472,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SimpleGeosTests/Info.plist;
+				INFOPLIST_FILE = GeosSimpleAppIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGeos.app/SimpleGeos";
+				PRODUCT_NAME = GeosSimpleAppIOSTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeosSimpleAppIOS.app/GeosSimpleAppIOS";
 			};
 			name = Debug;
 		};
@@ -491,17 +487,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SimpleGeosTests/Info.plist;
+				INFOPLIST_FILE = GeosSimpleAppIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGeos.app/SimpleGeos";
+				PRODUCT_NAME = GeosSimpleAppIOSTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeosSimpleAppIOS.app/GeosSimpleAppIOS";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "SimpleGeos" */ = {
+		0E49BBB81A0D008600F6CC7C /* Build configuration list for PBXProject "GeosSimpleAppIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E49BBDE1A0D008700F6CC7C /* Debug */,
@@ -510,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeos" */ = {
+		0E49BBE01A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "GeosSimpleAppIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E49BBE11A0D008700F6CC7C /* Debug */,
@@ -519,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "SimpleGeosTests" */ = {
+		0E49BBE31A0D008700F6CC7C /* Build configuration list for PBXNativeTarget "GeosSimpleAppIOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E49BBE41A0D008700F6CC7C /* Debug */,

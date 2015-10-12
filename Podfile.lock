@@ -1,10 +1,14 @@
 PODS:
-  - IfinitySDK (0.1.6.5)
+  - IfinitySDK (0.1.6.9)
 
 DEPENDENCIES:
-  - IfinitySDK
+  - IfinitySDK (from `~/Work/ifinity/sdk/ifinitysdk-ios/`)
+
+EXTERNAL SOURCES:
+  IfinitySDK:
+    :path: ~/Work/ifinity/sdk/ifinitysdk-ios/
 
 SPEC CHECKSUMS:
-  IfinitySDK: 187079bfb4e0746e67bd8d4a9f0063c02baf6435
+  IfinitySDK: be6f5a39e7b2d1b9a2700f82601d668c5f47b187
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.38.2
